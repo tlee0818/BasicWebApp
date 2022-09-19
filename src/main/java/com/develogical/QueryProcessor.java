@@ -10,7 +10,7 @@ public class QueryProcessor {
         }
 
         if (query.toLowerCase().contains("name")) {
-            return "extermely-basic";
+            return "extremely-basic";
         }
         return "";
 
