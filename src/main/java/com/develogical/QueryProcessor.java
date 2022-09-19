@@ -25,7 +25,7 @@ public class QueryProcessor {
 
             String[] numbers = query.split(" ");
 
-            return String.valueOf(Integer.parseInt(numbers[3]) * Integer.parseInt(numbers[5]));
+            return String.valueOf(Integer.parseInt(numbers[3]) * Integer.parseInt(numbers[6]));
         }
 
         if (query.toLowerCase().contains("largest")) {
