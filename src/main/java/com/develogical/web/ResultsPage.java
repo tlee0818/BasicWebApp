@@ -22,7 +22,6 @@ public class ResultsPage extends HtmlPage {
             writer.println("<h1>" + query + "</h1>");
             writer.println("<p>" + answer + "</p>");
         }
-
         writer.println("<p><a href=\"/\">Back to Search Page</a></p>");
     }
 }
