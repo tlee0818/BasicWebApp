@@ -19,13 +19,13 @@ public class QueryProcessor {
 
             String[] numbers = query.split(" ");
 
-            return String.valueOf(Integer.parseInt(numbers[2]) + Integer.parseInt(numbers[4]));
+            return String.valueOf(Integer.parseInt(numbers[3]) + Integer.parseInt(numbers[5]));
         }
         if (query.toLowerCase().contains("mult")) {
 
             String[] numbers = query.split(" ");
 
-            return String.valueOf(Integer.parseInt(numbers[2]) * Integer.parseInt(numbers[4]));
+            return String.valueOf(Integer.parseInt(numbers[3]) * Integer.parseInt(numbers[5]));
         }
 
         if (query.toLowerCase().contains("largest")) {
