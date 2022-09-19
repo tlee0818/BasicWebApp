@@ -12,6 +12,18 @@ public class QueryProcessor {
         if (query.toLowerCase().contains("name")) {
             return "extremely-basic";
         }
+
+        if (query.toLowerCase().contains("plus")) {
+            System.out.println(query);
+
+            String[] numbers = query.split(" ");
+
+            return String.valueOf(Integer.parseInt(numbers[2]) + Integer.parseInt(numbers[4]));
+        }
+
+        if (query.toLowerCase().contains("largest")) {
+            return "extremely-basic";
+        }
         return "";
 
     }
