@@ -1,5 +1,7 @@
 package com.develogical;
 
+import java.util.*;
+
 public class QueryProcessor {
 
     public String process(String query) {
@@ -14,15 +16,22 @@ public class QueryProcessor {
         }
 
         if (query.toLowerCase().contains("plus")) {
-            System.out.println(query);
 
             String[] numbers = query.split(" ");
 
             return String.valueOf(Integer.parseInt(numbers[2]) + Integer.parseInt(numbers[4]));
         }
+        if (query.toLowerCase().contains("mult")) {
+
+            String[] numbers = query.split(" ");
+
+            return String.valueOf(Integer.parseInt(numbers[2]) * Integer.parseInt(numbers[4]));
+        }
 
         if (query.toLowerCase().contains("largest")) {
-            return "extremely-basic";
+            List numbers = Arrays.asList(query.split(" "));
+
+            return String.valueOf(numbers.get(0));
         }
         return "";
 
